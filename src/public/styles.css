@@ -1,0 +1,27 @@
+.reveal {
+    font-size: 20px; /* Adjust to your desired base font size */
+}
+
+#presentation {
+    width: 800px;
+  height: 600px;
+  margin: 0 auto; /* Center the presentation horizontally */
+  border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
+}
+
+.slides section {
+    font-size: 1em; /* Fine-tune font size for slides */
+}
+
+.caption-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+}
+
+#caption-text {
+    font-size: 2rem;
+    color: gold;
+}
+

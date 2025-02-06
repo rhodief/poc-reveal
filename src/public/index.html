@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reveal.js Presentation</title>
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/moon.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="presentation-container">
+    <div class="reveal" id="presentation">
+      <div class="slides">
+        <!-- 
+        <section data-markdown data-auto-animate data-auto-animate-easing="ease-in-out" data-auto-animate-duration="0.8">
+          <textarea data-template>
+            ## Slide 1
+            - Item A
+          </textarea>
+        </section>
+        <section data-markdown data-auto-animate data-auto-animate-easing="ease-in-out" data-auto-animate-duration="0.8">
+          <textarea data-template>
+            ## Slide 1
+            - Item A
+            - Item B
+          </textarea>
+        </section>
+        <section  data-auto-animate>
+          <h1>Group A</h1>
+        </section>
+        <section data-auto-animate>
+          <h1 style="color: #3B82F6; font-size:20px">Group A</h1>
+        </section>
+        -->
+        <section data-markdown>
+          <textarea data-template>
+  <!-- Slide 1 -->
+  ## Sistema Digestório: Introdução
+  
+  - **Funções principais**:
+    - Quebrar alimentos em partículas menores.
+    - Absorver nutrientes essenciais.
+    - Eliminar resíduos não digeridos.
+  
+  - **Composição**:
+    - Trato gastrointestinal (boca, faringe, esôfago, estômago, intestino delgado e grosso).
+    - Glândulas acessórias (salivares, fígado e pâncreas).
+  
+  ---
+  
+  <!-- Slide 2 -->
+  ## Processo de Digestão: Etapas Iniciais
+  
+  - **Boca**:
+    - Digestão mecânica: dentes cortam e trituram.
+    - Digestão química: saliva (amilase) quebra carboidratos.
+    - Formação do bolo alimentar.
+  
+  - **Faringe e Esôfago**:
+    - Faringe: ponto de transição.
+    - Esôfago: transporte do bolo alimentar por movimentos peristálticos.
+  
+  ---
+  
+  <!-- Slide 3 -->
+  ## Estômago e Intestino Delgado
+  
+  - **Estômago**:
+    - Ação do suco gástrico (ácido clorídrico e pepsina).
+    - Transformação do bolo alimentar em quimo.
+  
+  - **Intestino Delgado**:
+    - Digestão química: suco pancreático, bile e secreções intestinais.
+    - Absorção de nutrientes: vilosidades aumentam a superfície de contato.
+  
+  ---
+  
+  <!-- Slide 4 -->
+  ## Intestino Grosso e Eliminação
+  
+  - **Funções principais**:
+    - Reabsorção de água.
+    - Formação e armazenamento de fezes.
+  
+  - **Estruturas**:
+    - Ceco, cólon (ascendente, transverso, descendente, sigmoide) e reto.
+    - Eliminação pelo ânus.
+  
+  ---
+  
+  <!-- Slide 5 -->
+  ## Reflexão Final
+  
+  - A digestão é essencial para:
+    - Garantir energia e nutrientes ao corpo.
+    - Manter o equilíbrio metabólico.
+  
+  - **Pergunta**:
+    - Quais hábitos alimentares ajudam a otimizar o funcionamento do sistema digestório?
+  
+                  </textarea>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="caption-container">
+    <div id="caption-text"></div>
+  </div>
+  <div>
+    <button id="play">▶️ Iniciar</button>
+    <button id="speakButton">▶️ Falar</button>
+    <button id="pauseButton">⏸️ Pausar</button>
+    <button id="resumeButton">▶️ Continuar</button>
+    <button id="stopButton">⛔ Parar</button>
+    <div>
+      <label for="speedRange">Velocidade:</label>
+      <input type="range" id="speedRange" min="0.5" max="2" step="0.1" value="1">
+      <span id="speedValue">1.0x</span>
+    </div>
+    <select id="voiceSelect"></select>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
+
+</html>

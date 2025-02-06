@@ -1,0 +1,1 @@
+docker run -it --name poc_reveal -v .:/app -p 3000:3000 rhodie/reveal
